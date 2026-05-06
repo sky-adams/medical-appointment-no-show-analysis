@@ -1,10 +1,12 @@
 # Medical Appointment No-Show Analysis
 
 ## Description
-I completed this project as part of Udacity's Data Analyst nanodegree program. This project shows my ability to use pandas to go through the data analysis process. The analysis uses data from Kaggle ([original source](https://www.kaggle.com/datasets/joniarroba/noshowappointments)) on medical appointments in Brazil, and it uncovers interesting correlations in the data.
+This project analyzes more than 110,000 medical appointments in Brazil to explore factors associated with patient no-shows. Using Python and pandas, I cleaned the data, examined patterns in age and scheduling lead time, and compared no-show rates across hospitals to identify notable trends.
+
+I completed this project as part of Udacity's Data Analyst nanodegree program.
 
 ## Dataset
-The dataset contains information on over 110,000 scheduled medical appointments from public hospitals in Brazil, with patient demographics, appointment timing, health indicators, and a label indicating whether the patient showed up or not. Key variables include age, gender, appointment and scheduling dates, hospital neighborhood, participation in the Bolsa Família welfare program, several chronic conditions, whether an SMS reminder was received, and the no‑show flag.​
+The analysis uses data from Kaggle ([original source](https://www.kaggle.com/datasets/joniarroba/noshowappointments)). The dataset contains information on over 110,000 scheduled medical appointments from public hospitals in Brazil, with patient demographics, appointment timing, health indicators, and a label indicating whether the patient showed up or not. Key variables include age, gender, appointment and scheduling dates, hospital neighborhood, participation in the Bolsa Família welfare program, several chronic conditions, whether an SMS reminder was received, and the no‑show flag.​
 
 ## Questions Explored
 The notebook is organized around three main analytic questions:​
@@ -12,7 +14,7 @@ The notebook is organized around three main analytic questions:​
 - Is there a correlation between how many days in advance an appointment is scheduled and whether or not the appointment is a no-show? If so, what is the correlation?
 - Do some hospitals have higher no-show rates than others?
 
-## Data Wrangling and Cleaning
+## Data Wrangling
 The project performs several cleaning and preparation steps before analysis:​
 - Converts scheduling and appointment timestamps to dates and computes a new DaysInAdvance feature.​
 - Removes records where the scheduled date is later than the appointment date, which indicate invalid entries.​
